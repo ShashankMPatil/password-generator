@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+.mycontainer{
+    background-color: #0c162d;
+    border: 1px solid #727478;
+    border-radius: 25px;
+    padding: 2rem;
+    z-index: 0;
+}
+
+.checkbox-xl{
+    scale: 1.7;
+    margin-right: 0.8rem;
+}
+.passwordDisplay{
+    background-color: white;
+    border-radius: 25px;
+    height: 4rem;
+    width: 100%;
+    color: rgb(129, 125, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-range{
+    width:3rem;
+}
+#characterRange{
+    border-radius: 7px;
+}

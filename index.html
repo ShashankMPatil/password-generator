@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="node_modules/font-awesome/css/font-awesome.min.css" />
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-social/bootstrap-social.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Practise</title>
+	</head>
+	<body>
+		<video
+			playinline="playinline"
+			autoplay="autoplay"
+			muted="muted"
+			loop="loop"
+			id="bgvideo">
+			<source
+				src="./video/pexels-postcard-pictures-5818973-3840x2160-24fps.mp4"
+				type="video/mp4" />
+		</video>
+		<div class="mycontainer shadow shadow-warning shadow-intensity-lg">
+			<h1 class="text-center">Password Generator</h1>
+			<h2 class="text-center passwordDisplay" id="Display"></h2>
+
+			<form class="mt-3" id="passwordGenerator">
+				<div class="form-group mt-1">
+					<label for="characterRange" class="col-6">Number of characters</label>
+					<input
+						type="range"
+						class="col-3"
+						id="characterRange"
+						min="4"
+						max="20"
+						value="8" />
+					<input
+						type="number"
+						class="number-range ml-4"
+						id="numberRange"
+						min="4"
+						max="20"
+						value="8" />
+				</div>
+
+				<div class="form-group mt-1">
+					<label for="uppercaseCheckbox" class="col-6 mt-2"
+						>Include Uppercase</label
+					>
+					<input
+						type="checkbox"
+						class="col-5 checkbox-xl"
+						id="uppercaseCheckbox" />
+				</div>
+
+				<div class="form-group mt-1">
+					<label for="symbolsCheckbox" class="col-6 mt-2"
+						>Include Symbols</label
+					>
+					<input
+						type="checkbox"
+						class="col-5 checkbox-xl"
+						id="symbolsCheckbox" />
+				</div>
+
+				<div class="form-group mt-1">
+					<label for="numberCheckbox" class="col-6 mt-2">Include Numbers</label>
+					<input
+						type="checkbox"
+						class="col-5 checkbox-xl"
+						id="numberCheckbox" />
+				</div>
+
+				<div class="form-group mt-1">
+					<button type="sumbit" class="btn btn-primary rounded-pill col">
+						Generate
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<script src="script.js"></script>
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
